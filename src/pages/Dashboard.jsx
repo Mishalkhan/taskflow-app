@@ -42,7 +42,7 @@ const Dashboard = () => {
           <div className="fixed top-0 left-0 h-full w-64 bg-white shadow-lg p-6 z-50 md:hidden">
             
             <button
-              className="mb-4 text-gray-500"
+              className="mb-4 text-gray-500 cursor-pointer"
               onClick={() => setSidebarOpen(false)}
             >
               ✕
@@ -113,7 +113,7 @@ const Dashboard = () => {
         {/* TOPBAR */}
         <div className="bg-white p-4 rounded-xl shadow-sm mb-6 flex justify-between items-center">
           <button
-            className="md:hidden text-xl"
+            className="md:hidden text-xl cursor-pointer"
             onClick={() => setSidebarOpen(true)}
           >
             ☰
@@ -162,7 +162,7 @@ const Dashboard = () => {
 
             <button
               onClick={addTask}
-              className="bg-gradient-to-r from-green-400 to-blue-600 text-white px-5 py-2 rounded-lg hover:opacity-90 transition"
+              className="bg-gradient-to-r from-green-400 to-blue-600 text-white px-5 py-2 rounded-lg hover:opacity-90 transition cursor-pointer"
             >
               Add
             </button>
@@ -192,7 +192,7 @@ const Dashboard = () => {
 
                     <button
                       onClick={() => deleteTask(index)}
-                      className="text-red-500 text-sm"
+                      className="text-red-500 text-sm cursor-pointer"
                     >
                       Delete
                     </button>
@@ -220,7 +220,7 @@ const Dashboard = () => {
 
               <button
                 onClick={addTask}
-                className="bg-gradient-to-r from-green-400 to-blue-600 text-white px-5 py-2 rounded-lg hover:opacity-90 transition"
+                className="bg-gradient-to-r from-green-400 to-blue-600 text-white px-5 py-2 rounded-lg hover:opacity-90 transition cursor-pointer"
               >
                 Add
               </button>
@@ -250,7 +250,7 @@ const Dashboard = () => {
 
                       <button
                         onClick={() => deleteTask(index)}
-                        className="text-red-500 text-sm"
+                        className="text-red-500 text-sm cursor-pointer"
                       >
                         Delete
                       </button>
@@ -305,7 +305,7 @@ const Dashboard = () => {
                     toast.success("All tasks deleted successfully!");
                   }
                 }}
-                className="bg-red-500 text-white px-5 py-2 rounded-lg hover:bg-red-600 transition"
+                className="bg-red-500 text-white px-5 py-2 rounded-lg hover:bg-red-600 transition cursor-pointer"
               >
                 Clear All Tasks
               </button>
