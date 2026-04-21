@@ -27,7 +27,7 @@ const Dashboard = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gray-100 flex">
+    <div className="min-h-screen bg-gray-100 flex overflow-x-hidden">
 
       {/* MOBILE SIDEBAR*/}
       {sidebarOpen && (
@@ -39,7 +39,7 @@ const Dashboard = () => {
           ></div>
 
           {/* MOBILE SIDEBAR */}
-          <div className="fixed top-0 left-0 h-full w-64 bg-white shadow-lg p-6 z-50 md:hidden">
+          <div className="fixed top-0 left-0 h-full w-64 bg-white shadow-lg p-4 md:p-6 z-50 md:hidden">
             
             <button
               className="mb-4 text-gray-500 cursor-pointer"
@@ -68,7 +68,7 @@ const Dashboard = () => {
         </div>
       )}
       {/* SIDEBAR */}
-      <div className="w-64 bg-white shadow-lg p-6 hidden md:block">
+      <div className="w-64 bg-white shadow-lg p-4 md:p-6 hidden md:block">
         <h2 className="text-xl font-bold mb-8">TaskFlow</h2>
 
         <ul className="space-y-4 text-gray-600">
@@ -105,7 +105,7 @@ const Dashboard = () => {
       </div>
 
       {/* MAIN */}
-      <div className="flex-1 p-6 flex flex-col min-h-screen">
+      <div className="flex-1 p-4 md:p-6 flex flex-col min-h-screen w-full">
 
       {/* CONTENT */}
       <div className="flex-grow">
@@ -169,7 +169,7 @@ const Dashboard = () => {
           </div>
 
           {/* TASK LIST */}
-          <div className="bg-white p-6 rounded-xl shadow-sm">
+          <div className="bg-white p-4 md:p-6 rounded-xl shadow-sm">
             <h2 className="text-lg font-semibold mb-4">Your Tasks</h2>
 
             {tasks.length === 0 ? (
@@ -227,7 +227,7 @@ const Dashboard = () => {
             </div>
 
             {/* TASK LIST */}
-            <div className="bg-white p-6 rounded-xl shadow-sm">
+            <div className="bg-white p-4 md:p-6 rounded-xl shadow-sm">
               <h2 className="text-lg font-semibold mb-4">Your Tasks</h2>
 
               {tasks.length === 0 ? (
@@ -263,7 +263,7 @@ const Dashboard = () => {
           )}
 
           {activeTab === "progress" && (
-            <div className="bg-white p-6 rounded-xl shadow-sm">
+            <div className="bg-white p-4 md:p-6 rounded-xl shadow-sm">
               <h2 className="text-lg font-semibold mb-6">Progress</h2>
 
               {/* DATA */}
@@ -287,7 +287,7 @@ const Dashboard = () => {
           )}
 
           {activeTab === "settings" && (
-            <div className="bg-white p-6 rounded-xl shadow-sm max-w-lg md:mx-auto md:mt-10">
+            <div className="bg-white p-4 md:p-6 rounded-xl shadow-sm max-w-lg md:mx-auto md:mt-10">
               <h2 className="text-lg font-semibold mb-6">Settings</h2>
 
               <p className="text-gray-500 mb-6">
