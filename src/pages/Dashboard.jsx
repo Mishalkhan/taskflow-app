@@ -151,18 +151,18 @@ const Dashboard = () => {
           </div>
 
           {/* TASK INPUT */}
-          <div className="bg-white p-4 rounded-xl shadow-sm mb-6 flex gap-4">
+          <div className="bg-white p-4 rounded-xl shadow-sm mb-6 flex gap-3 w-full">
             <input
               type="text"
               placeholder="Add a new task..."
               value={input}
               onChange={(e) => setInput(e.target.value)}
-              className="flex-1 bg-gray-100 rounded-lg px-4 py-2 outline-none focus:ring-2 focus:ring-blue-400"
+              className="flex-1 min-w-0 bg-gray-100 rounded-lg px-4 py-2 outline-none focus:ring-2 focus:ring-blue-400"
             />
 
             <button
               onClick={addTask}
-              className="bg-gradient-to-r from-green-400 to-blue-600 text-white px-5 py-2 rounded-lg hover:opacity-90 transition cursor-pointer"
+              className="shrink-0 bg-gradient-to-r from-green-400 to-blue-600 text-white px-5 py-2 rounded-lg hover:opacity-90 transition cursor-pointer"
             >
               Add
             </button>
